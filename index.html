@@ -1,0 +1,84 @@
+import os
+
+# Define the content of the index.html file
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Table Tennis Coach AI</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        p, li {
+            margin-bottom: 15px;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            text-align: center;
+        }
+        .highlight {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Last Updated: April 2026</strong></p>
+        
+        <p>Table Tennis Coach AI ("we," "our," or "the App") is committed to protecting your privacy. This Privacy Policy explains how we handle data when you use our mobile application to improve your table tennis technique.</p>
+
+        <h2>1. Camera Access and Video Processing</h2>
+        <div class="highlight">
+            <p><strong>Real-time Analysis:</strong> The App requires access to your device’s camera to detect the ball and analyze player form in real-time. By default, video processing occurs <strong>locally on your device</strong>.</p>
+        </div>
+        <p>Raw video footage is processed frame-by-frame and is not recorded, stored, or transmitted to any servers unless explicitly initiated by the user for advanced analysis features.</p>
+
+        <h2>2. Data Collection and Usage</h2>
+        <p>To provide coaching insights and technical feedback, the App may process the following:</p>
+        <ul>
+            <li><strong>Movement Metadata:</strong> Mathematical representations of strokes, ball trajectories, and skeletal coordinates.</li>
+            <li><strong>Calibration Files:</strong> User-provided or generated configuration files (e.g., JSON format) used to calibrate the camera and improve tracking accuracy.</li>
+            <li><strong>AI Analysis:</strong> Technical metadata may be processed via Large Language Models (LLMs) to generate coaching feedback. This data is stripped of personal identifiers before processing.</li>
+        </ul>
+
+        <h2>3. Data Storage and Security</h2>
+        <p><strong>Local Storage:</strong> Most data, including personal progress and calibration settings, is stored locally on your device.</p>
+        <p><strong>Cloud Processing:</strong> If data is transmitted for AI analysis, we use industry-standard encryption to ensure your metadata remains secure. We do not sell your technical or personal data to third parties.</p>
+
+        <h2>4. Third-Party Services</h2>
+        <p>We may use third-party tools (such as Google Firebase) for crash reporting and basic analytics to improve App stability and performance. These services collect anonymous device information only.</p>
+
+        <h2>5. Children’s Privacy</h2>
+        <p>Our App is intended for sports training. We do not knowingly collect personal information from children under 13.</p>
+
+        <h2>6. Changes to This Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Continued use of the App after changes constitutes acceptance of the new terms.</p>
